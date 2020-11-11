@@ -11,7 +11,7 @@ export class HomePage {
   drugs: any;
 
   constructor(private httpClient: HttpClient) {
-    this.drugs = this.httpClient.get()
+    this.drugs = this.httpClient.get('https://raw.githubusercontent.com/Oscarexe/pruebaGit/main/src/MOCK_DATA.json');
   }
 
 }
